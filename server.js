@@ -22,7 +22,7 @@ const studentRoutes = require('./routes/studentRoutes');
 
 app.use('/student', studentRoutes);
 
-const PORT = process.env.PORT;
+// const PORT = process.env.PORT;
 
-app.listen(PORT, ()=> console.log('server at 3000'));
+app.listen(3000, ()=> console.log('server at 3000'));
 
