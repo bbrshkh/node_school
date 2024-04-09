@@ -8,8 +8,8 @@ const mongoURL = 'mongodb+srv://school:school123@cluster0.mr6vz9n.mongodb.net/'
 
 
 mongoose.connect(mongoURL, {
-    // useNewUrlParser: true,
-    // useUnifiedTopology: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 });
 
 const db = mongoose.connection;
