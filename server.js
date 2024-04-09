@@ -4,6 +4,8 @@ const app = express();
 
 const db = require('./db');
 
+require('dotenv').config();
+
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
@@ -20,5 +22,7 @@ const studentRoutes = require('./routes/studentRoutes');
 
 app.use('/student', studentRoutes);
 
-app.listen(3000, ()=> console.log('server at 3000'));
+const PORT = process.env.PORT;
+
+app.listen(PORT, ()=> console.log('server at 3000'));
 
