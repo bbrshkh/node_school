@@ -11,7 +11,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 app.get('/', (req, res)=>{
-    res.send('hello world')
+    res.send('Welcome to our school')
 })
 
 const teacherRoutes = require('./routes/teacherRoutes');
